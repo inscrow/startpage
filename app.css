@@ -1,0 +1,19 @@
+/*
+ * font
+ * @import url('https://fonts.googleapis.com/css2?...')
+ */
+
+:root {
+	--bg-primary: #282828;
+	--fg-primary: #ebdbb2;
+}
+
+body {
+	background-image: url(assets/background.jpg);
+}
+
+.list {
+	color: #ebdbb2;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
