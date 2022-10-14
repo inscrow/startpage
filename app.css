@@ -1,15 +1,26 @@
-/*
- * font
- * @import url('https://fonts.googleapis.com/css2?...')
- */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Teko:wght@500&display=swap');
 
 :root {
-	--bg-primary: #282828;
-	--fg-primary: #ebdbb2;
+	--title-font: 'Teko', sans-serif;
+	--normal-font: 'Chakra Petch', sans-serif;
 }
 
 body {
+	font-family: var(--normal-font);
 	background-image: url(assets/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+h1,h2 {
+	font-family: var(--title-font);
+	text-align: center;
+	text-justify: center;
+}
+
+ul {
+	list-style-type: none;
 }
 
 .list {
@@ -17,3 +28,19 @@ body {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+a, a:visited {
+	color: #ebdbb2;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ebdbb2;
+	text-decoration: underline;
+}
